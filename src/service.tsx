@@ -179,6 +179,32 @@ function Services() {
         </ul>
       </div>
     </div>
+    <div className="grid md:grid-cols-2 gap-16 items-center">
+      <div className="md:order-2">
+        <img 
+          src="https://images.unsplash.com/photo-1496747611176-843222e1e57c"
+          alt="Portrait Photography"
+          className="w-full h-[600px] object-cover rounded-lg shadow-2xl"
+        />
+      </div>
+      <div className="md:order-1">
+        <h2 className="text-yellow-400 text-xl font-semibold mb-6"></h2>
+        <h3 className="text-4xl md:text-5xl mb-8 heading-font text-teal ">
+        Creative Consultation   
+        </h3>
+        <p className="text-xl text-gray-300 mb-6">
+        Ideation sessions, storyboarding, and planning for campaigns or special projects.   
+<br/>
+- Guidance on how to maximize your budget, brand consistency, and viewer engagement. 
+        </p>
+        <ul className="text-xl text-gray-300 space-y-4">
+          <li>• Professional Headshots</li>
+          <li>• Family Portraits</li>
+          <li>• Creative Portraiture</li>
+          <li>• Editorial Photography</li>
+        </ul>
+      </div>
+    </div>
 
       {/* Service Grid */}
       <section className="py-20">
