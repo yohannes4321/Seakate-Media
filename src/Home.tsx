@@ -136,15 +136,17 @@ function Home() {
         </div>
       </section>
 
-      {/* Brands Section with Horizontal Scroll */}
       <section className="py-16 bg-gray-900">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl text-center font-bold mb-12 text-teal ">BRANDS WE'VE WORKED WITH</h2>
-          <div className="relative">
-            <div className="flex overflow-x-auto py-4 scrollbar-hide space-x-12">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl text-center font-bold mb-12 text-teal">
+          BRANDS WE'VE WORKED WITH
+        </h2>
+        <div className="relative">
+          <div className="overflow-x-hidden py-4">
+            <div className="flex animate-scroll-space space-x-12">
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
-                <div 
-                  key={i} 
+                <div
+                  key={i}
                   className="flex-shrink-0 w-48 h-24 bg-gray-800 rounded-lg flex items-center justify-center"
                 >
                   <span className="text-gray-400 text-teal">Brand Logo {i}</span>
@@ -153,7 +155,8 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Services Section */}
       <section className="py-20 bg-gray-900">
