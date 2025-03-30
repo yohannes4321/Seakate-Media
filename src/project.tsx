@@ -12,7 +12,7 @@ function Projects() {
   const projects = [
     {
       type: 'video',
-      src: 'https://player.vimeo.com/external/394678700.sd.mp4?s=1e190c75f84b41a9e3973f48b44bf602c8c92506&profile_id=165&oauth2_token_id=57447761',
+      src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743306830/photo/gdrjtwxzokay87vlpjsn.mp4',
       thumbnail: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
       title: 'Brand Campaign',
       description: 'A dynamic brand campaign that captured the essence of modern luxury.',
@@ -25,7 +25,7 @@ function Projects() {
     },
     {
       type: 'video',
-      src: 'https://player.vimeo.com/external/434045526.sd.mp4?s=c27eecc69a27dbc4ff2b87d38afc35f1a9e7c02d&profile_id=165&oauth2_token_id=57447761',
+      src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743306880/photo/kl93gt3qqzriit1hnnq8.mp4',
       thumbnail: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
       title: 'Social Media Campaign',
       description: 'Engaging social media content that drives engagement.',
@@ -38,7 +38,7 @@ function Projects() {
     },
     {
       type: 'video',
-      src: 'https://player.vimeo.com/external/449759940.sd.mp4?s=d5f3da46ddc17aa69a7de84f1e420610ecd2032a&profile_id=165&oauth2_token_id=57447761',
+      src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743306898/photo/xzxtpj8wcbkmazrl2a5e.mp4',
       thumbnail: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
       title: 'Event Coverage',
       description: 'Professional event coverage and storytelling.',
