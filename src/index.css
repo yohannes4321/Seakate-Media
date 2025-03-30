@@ -1,14 +1,9 @@
-/* styles.css or your global Tailwind CSS file */
-
-/* Tailwind Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* Custom Fonts */
 .heading-font {
   font-family: 'Playfair Display', serif;
 }
@@ -17,12 +12,10 @@
   font-family: 'Inter', sans-serif;
 }
 
-/* Hero Gradient */
 .hero-gradient {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
 }
 
-/* Button Styles */
 .yellow-button {
   background-color: #FFD700;
   color: black;
@@ -34,28 +27,11 @@
   transform: translateY(-2px);
 }
 
-/* Brand Section */
 .brand-section {
   background-color: #FFD700;
 }
 
-/* Service Card */
 .service-card {
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
-}
-
-/* Custom Scroll Animation (Faster) */
-@keyframes scrollBrands {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-/* Make the animation run faster */
-.animate-scroll-space {
-  animation: scrollBrands 15s linear infinite; /* Change 30s to 15s or any other value */
 }

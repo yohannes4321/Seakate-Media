@@ -11,9 +11,9 @@ export default {
       colors: {
         'brand-yellow': '#FFD700',
         teal: {
-          400: '#04E4D8',
-          DEFAULT: '#04E4D8', // Default teal color
-        },
+          400: '#04E4D8', // You can add different shades if needed
+          DEFAULT: '#04E4D8', // This makes 'teal' work without suffix
+        }
       },
     },
   },
