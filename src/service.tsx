@@ -78,11 +78,11 @@ function Services() {
         <div className="container mx-auto px-4 bg-gray-900 ">
           <div className="max-w-4xl bg-gray-900 ">
            
-            <h1 className="text-6xl md:text-7xl font-bold mb-8 text-teal  heading-font">
-              Exceptional Photography<br />And Cinematography
+            <h1 className="text-6xl md:text-6xl font-bold mb-5 text-teal  heading-font">
+            Services We Provide<br />
             </h1>
             <p className="text-xl md:text-2xl text-gray-300">
-              From commercial shoots to intimate portraits, we bring your vision to life through our lens.
+            
             </p>
           </div>
         </div>
