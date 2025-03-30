@@ -19,7 +19,7 @@ function Projects() {
     },
     {
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1741394773/photo/jrzmqrsmc4rhr7kom8aw.jpg',
       title: 'Product Photography',
       description: 'Premium product photography that elevates brand perception.',
     },
@@ -32,7 +32,7 @@ function Projects() {
     },
     {
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1741642419/photo/cg5fcukvbegabsx9ypgl.jpg',
       title: 'Brand Identity',
       description: 'Comprehensive brand identity development and guidelines.',
     },

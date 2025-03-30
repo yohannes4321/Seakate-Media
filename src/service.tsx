@@ -103,10 +103,13 @@ function Services() {
       <div>
         <h2 className="text-yellow-400 text xl font-bold mb-6"></h2>
         <h3 className="text-4xl md:text-7xl mb-8 heading-font text-teal ">
-          Commercial<br />Photography
+        Video Production<br />And Editing
         </h3>
         <p className="text-xl mb-6">
-  Elevate your brand with stunning commercial photography that captures your products and services in their best light. We specialize in:
+        - Marketing videos, social media content, weddings, documentaries, and more.   
+<br />
+         
+- Story-driven approach that highlights your core message.   
 </p>
         <ul className="text-xl text-gray-300 space-y-4">
           <li>• Product Photography</li>
@@ -129,10 +132,12 @@ function Services() {
       <div className="md:order-1">
         <h2 className="text-yellow-400 text-xl font-semibold mb-6"></h2>
         <h3 className="text-4xl md:text-5xl mb-8 heading-font text-teal ">
-          Portrait<br />Photography
+          Photography
         </h3>
         <p className="text-xl text-gray-300 mb-6">
-          Capture your unique personality with professional portrait sessions tailored to your style. Our services include:
+        - Professional portraits, event photography, branded image libraries, and personal milestones.   
+<br/>
+- Expert composition, lighting, and styling to preserve your memories with clarity and charm. 
         </p>
         <ul className="text-xl text-gray-300 space-y-4">
           <li>• Professional Headshots</li>
@@ -144,6 +149,36 @@ function Services() {
     </div>
   </div>
 </section>
+<div className="grid md:grid-cols-2 gap-16 items-center mb-32">
+      <div>
+        <img 
+          src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e"
+          alt="Commercial Photography"
+          className="w-full h-[600px] object-cover rounded-lg shadow-2xl"
+        />
+      </div>
+      <div>
+        <h2 className="text-yellow-400 text xl font-bold mb-6"></h2>
+        <h3 className="text-4xl md:text-7xl mb-8 heading-font text-teal ">
+      Live Streaming And Broadcast   
+        </h3>
+        <p className="text-xl mb-6">
+      
+   - Seamless small-scale live stream setups for graduations, conferences, church services, or corporate events.   
+<br/>
+- Technical excellence ensuring your audience experiences the event as if they were there in person. 
+<br />
+         
+- Story-driven approach that highlights your core message.   
+</p>
+        <ul className="text-xl text-gray-300 space-y-4">
+          <li>• Product Photography</li>
+          <li>• Corporate Portraits</li>
+          <li>• Architecture & Interior</li>
+          <li>• Event Coverage</li>
+        </ul>
+      </div>
+    </div>
 
       {/* Service Grid */}
       <section className="py-20">
