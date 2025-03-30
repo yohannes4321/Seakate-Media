@@ -102,11 +102,12 @@ function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-6xl md:text-7xl font-bold mb-6 heading-font">
-              Making What You<br />
-              <span className="heading-font" style={{ fontSize: '4.5rem' }}>Stand For, Stand Out</span>
+              Connecting Stories,<br />
+              <span className="heading-font" style={{ fontSize: '4.5rem' }}>Shaping Perspective</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-300">
-              To reach your customers, clients and community
+            We don’t just press “record” we craft stories. 
+
             </p>
           </div>
         </div>
@@ -121,32 +122,29 @@ function Home() {
               Why Should<br />Anyone Listen To<br />You?
             </h3>
             <p className="text-xl text-gray-300 mb-6">
-              Most brands and experts struggle to stand out and because of that, remain invisible.
+            At Seakate Media, we believe every moment and every brand has a narrative worth sharing. Our team combines years of professional experience in videography, photography, and storytelling to deliver visuals that captivate and connect. We’ve worked with educational institutions, churches, and clients from all walks of life, consistently turning their visions into powerful, engaging content. When you work with us, you’re not just getting technical expertise—you’re getting a dedicated partner who cares about your message, your audience, and your results. 
+
             </p>
             <p className="text-xl text-gray-300 mb-6">
-              Most people don't know how to promote themselves and remain unknown, overlooked, and left behind.
+              
             </p>
             <p className="text-xl text-gray-300 mb-8">
-              Learn our Personal Branding Process and you'll finally get the recognition you deserve.
+              
             </p>
-            <button className="border-2 border-[#04E4D8] text-[#04E4D8] px-8 py-3 rounded-full hover:bg-[#04E4D8] hover:text-gray-900 transition-all">
-              ENQUIRE NOW
-            </button>
+            
           </div>
         </div>
       </section>
 
+      {/* Brands Section with Horizontal Scroll */}
       <section className="py-16 bg-gray-900">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl text-center font-bold mb-12 text-teal">
-          BRANDS WE'VE WORKED WITH
-        </h2>
-        <div className="relative">
-          <div className="overflow-x-hidden py-4">
-            <div className="flex animate-scroll-space space-x-12">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl text-center font-bold mb-12 text-teal ">BRANDS WE'VE WORKED WITH</h2>
+          <div className="relative">
+            <div className="flex overflow-x-auto py-4 scrollbar-hide space-x-12">
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
-                <div
-                  key={i}
+                <div 
+                  key={i} 
                   className="flex-shrink-0 w-48 h-24 bg-gray-800 rounded-lg flex items-center justify-center"
                 >
                   <span className="text-gray-400 text-teal">Brand Logo {i}</span>
@@ -155,15 +153,14 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       {/* Services Section */}
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-[#04E4D8] text-xl font-semibold mb-6">WHAT WE DO</h2>
+          <h2 className="text-[#04E4D8] text-xl font-semibold mb-6"></h2>
           <h3 className="text-5xl md:text-6xl mb-16 heading-font">
-            We Do More Than Just<br />Content
+           <br />
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-800 p-8 rounded-lg hover:bg-gray-700 transition-colors">
@@ -188,30 +185,15 @@ function Home() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section className="py-20 bg-gray-900">
-        <div className="container mx-auto px-4">
-          <h2 className="text-[#04E4D8] text-xl font-semibold mb-6">PROJECTS</h2>
-          <h3 className="text-5xl md:text-6xl mb-12 heading-font text-teal">
-            From Campaigns To<br />
-            <span className="heading-font">Social Media content.</span>
-          </h3>
-          <div className="flex space-x-8 mb-16">
-            <button className="text-[#04E4D8] border-b-2 border-[#04E4D8] pb-2">All</button>
-            <button className="text-gray-400 hover:text-[#04E4D8] pb-2">Motion Graphics</button>
-            <button className="text-gray-400 hover:text-[#04E4D8] pb-2">Photography</button>
-            <button className="text-gray-400 hover:text-[#04E4D8] pb-2">Video</button>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Past Projects Section */}
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-[#04E4D8] text-xl font-semibold mb-6">OUR WORK</h2>
+          <h2 className="text-[#04E4D8] text-xl font-semibold mb-6"></h2>
           <h3 className="text-5xl md:text-6xl mb-16 heading-font text-teal ">
             Past Projects We've<br />
-            <span className="heading-font italic">Worked On</span>
+            <span className="heading-font italic"></span>
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
             {[1, 2, 3].map((project) => (
@@ -238,14 +220,12 @@ function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-5xl md:text-6xl mb-8 heading-font Past">
-                Create a Successful<br />Personal Brand
+              How Can We Help You?<br />
               </h2>
               <p className="text-xl text-gray-300 mb-8">
-                Growing a personal brand requires a world-class team. Our process, strategy and team have created amazing results for some of Australia's most well-known individuals and industry leaders.
+              Whether you’re a school looking to boost admissions with a powerful promotional video, a nonprofit seeking to share an impactful testimonial, or an engaged couple wanting every wedding detail captured flawlessly—we’ve got you covered. We offer a range of services designed to amplify your voice and capture your most meaningful moments. 
               </p>
-              <button className="bg-[#04E4D8] text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-[#03CEC3] transition-colors">
-                LEARN MORE
-              </button>
+              
             </div>
             <div>
               <img 
@@ -262,16 +242,24 @@ function Home() {
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <h2 className="text-5xl md:text-6xl mb-8 heading-font Past">
-            Photo And Video Campaigns
+          What Sets Us Apart: 
           </h2>
           <div className="max-w-2xl">
-            <p className="text-xl text-gray-300 mb-6">
-              Our creative teams ready for your next big project. From Social Content to TVC's we're ready to take on the creative challenge and make something outstanding.
-            </p>
-            <p className="text-xl text-gray-300">
-              We treat every project like our own. Going above and beyond to deliver classy creativity and exceptional quality to help you stand out.
-            </p>
-          </div>
+  <p className="text-xl text-gray-300 mb-6 break-words hyphens-auto">
+    - Expertise & Creativity: From small-scale live streams to cinematic short films, our diverse skill set brings fresh ideas and professional execution.   <br />
+    <br />
+    
+
+    - Authentic Storytelling: We focus on the heart of your story, ensuring your unique message resonates with viewers.  <br /> <br />
+
+    - Proven Track Record: Having served numerous organizations and individuals—from colleges to couples on their big day—we know how to deliver on-time, on-budget, and above expectations. <br />  <br />
+
+    - Genuine Partnership: We collaborate closely with you from concept to final cut, making your vision our priority. 
+  </p>
+
+  
+</div>
+
         </div>
       </section>
 
