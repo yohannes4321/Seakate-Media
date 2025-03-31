@@ -80,7 +80,7 @@ function Home() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-6xl md:text-7xl font-bold mb-6 heading-font">
+            <h1 className="text-6xl md:text-7xl font-semibold mb-6 heading-font">
               Connecting Stories,<br />
               <span className="heading-font" style={{ fontSize: '4.5rem' }}>Shaping Perspective</span>
             </h1>
@@ -92,39 +92,32 @@ function Home() {
         </div>
       </section>
 
-      {/* Question Section */}
-      <section className="py-10 bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl">
-        
-            <h3 className="text-5xl md:text-6xl mb-8 heading-font text-teal ">
-              Why Should<br />Anyone Listen To<br />You?
-            </h3>
-            <p className="text-xl text-white-300 mb-6">
-            At Seakate Media, we believe every moment and every brand has a narrative worth sharing. Our team combines years of professional experience in videography, photography, and storytelling to deliver visuals that captivate and connect. We’ve worked with educational institutions, churches, and clients from all walks of life, consistently turning their visions into powerful, engaging content. When you work with us, you’re not just getting technical expertise—you’re getting a dedicated partner who cares about your message, your audience, and your results. 
+      <section className="py-20 bg-gray-900">
+  <div className="container mx-auto px-4">
+    <div className="max-w-4xl mx-auto">
+      <h3 className="text-5xl md:text-6xl mb-8 heading-font text-teal text-center">
+        Why Should Anyone <br />Listen To You?
+      </h3>
+      <div className="text-xl text-gray-300 space-y-6">
+        <p className="text-justify">
+          At Seakate Media, we believe every moment and every brand has a narrative worth sharing. Our team combines years of professional experience in videography, photography, and storytelling to deliver visuals that captivate and connect. We've worked with educational institutions, churches, and clients from all walks of life, consistently turning their visions into powerful, engaging content. When you work with us, you're not just getting technical expertise—you're getting a dedicated partner who cares about your message, your audience, and your results.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            </p>
-            <p className="text-xl text-white-300 mb-6">
-              
-            </p>
-            <p className="text-xl text-white-300 mb-8">
-              
-            </p>
-            
-          </div>
-        </div>
-      </section>
-
-      <div className="relative bg-[#04E4D8] py-8 overflow-hidden group">
+ {/* Gradient fade edges */}
+ <div className="relative bg-[#04E4D8] overflow-hidden">
   {/* Gradient fade edges */}
   <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#04E4D8] to-transparent z-10"></div>
   <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#04E4D8] to-transparent z-10"></div>
-  
-  <div className="animate-marquee flex whitespace-nowrap group-hover:[animation-play-state:paused]">
+
+  <div className="animate-marquee flex whitespace-nowrap group-hover:[animation-play-state:paused] py-8">
     {[...Array(5)].map((_, i) => (
       <span 
         key={i}
-        className="text-white text-4xl md:text-6xl font-extrabold tracking-tight mx-12 inline-block transform transition-all duration-300 hover:scale-110"
+        className="heading-font text-white text-4xl md:text-6xl font-semibold tracking-tight mx-12 inline-block transform transition-all duration-300 hover:scale-110"
       >
         Connecting stories and shaping perspective
       </span>
@@ -135,27 +128,32 @@ function Home() {
 
     
 <section className="py-10 bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-5xl md:text-6xl mb-8 heading-font Past">
-              How Can We Help You?<br />
-              </h2>
-              <p className="text-xl text-gray-300 mb-8">
-              Whether you’re a school looking to boost admissions with a powerful promotional video, a nonprofit seeking to share an impactful testimonial, or an engaged couple wanting every wedding detail captured flawlessly—we’ve got you covered. We offer a range of services designed to amplify your voice and capture your most meaningful moments. 
-              </p>
-              
-            </div>
-            <div>
-              <img 
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf"
-                alt="Personal Branding"
-                className="w-full rounded-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+  <div className="container mx-auto px-4">
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      {/* Text Content - Now with precise alignment */}
+      <div className="max-w-[540px] mx-auto md:mx-0 w-full">
+        <h2 className="text-5xl md:text-6xl mb-8 heading-font">
+          How Can We Help You?<br />
+        </h2>
+        <p className="text-xl text-gray-300 mb-8 text-justify">
+          Whether you're a school looking to boost admissions with a powerful promotional video, 
+          a nonprofit seeking to share an impactful testimonial, or an engaged couple wanting 
+          every wedding detail captured flawlessly we've got you covered. We offer a range of 
+          services designed to amplify your voice and capture your most meaningful moments.
+        </p>
+      </div>
+      
+      {/* Image - Maintained original styling */}
+      <div className="max-w-[540px] mx-auto md:mx-0 w-full">
+        <img 
+          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf"
+          alt="Personal Branding"
+          className="w-full rounded-lg shadow-xl"
+        />
+      </div>
+    </div>
+  </div>
+</section>
     
 
       
@@ -212,32 +210,46 @@ function Home() {
   </div>
 </section>
 
-      {/* Personal Brand Section */}
-     
       {/* Photo & Video Section */}
-      <section className="py-10 bg-gray-900">
-        <div className="container mx-auto px-4">
-          <h2 className="text-5xl md:text-6xl mb-8 heading-font Past">
-          What Sets Us Apart: 
-          </h2>
-          <div className="max-w-2xl">
-  <p className="text-xl text-gray-300 mb-6 break-words hyphens-auto">
-    - Expertise & Creativity: From small-scale live streams to cinematic short films, our diverse skill set brings fresh ideas and professional execution.   <br />
-    <br />
-    
-
-    - Authentic Storytelling: We focus on the heart of your story, ensuring your unique message resonates with viewers.  <br /> <br />
-
-    - Proven Track Record: Having served numerous organizations and individuals—from colleges to couples on their big day—we know how to deliver on-time, on-budget, and above expectations. <br />  <br />
-
-    - Genuine Partnership: We collaborate closely with you from concept to final cut, making your vision our priority. 
-  </p>
-
-  
-</div>
-
+<section className="py-10 bg-gray-900">
+  <div className="container mx-auto px-4">
+    <div className="max-w-4xl mx-auto"> {/* Centered container with max width */}
+      <h2 className="text-5xl md:text-6xl mb-8 heading-font">
+        What Sets Us Apart:
+      </h2>
+      
+      <div className="text-xl text-gray-300 space-y-6">
+        <div className="flex items-start">
+          <span className="text-teal-400 mr-4">-</span>
+          <p className="flex-1">
+            <span className="font-semibold ">Expertise & Creativity:</span> From small-scale live streams to cinematic short films, our diverse skill set brings fresh ideas and professional execution.
+          </p>
         </div>
-      </section>
+
+        <div className="flex items-start">
+          <span className="text-teal-400 mr-4">-</span>
+          <p className="flex-1">
+            <span className="font-semibold ">Authentic Storytelling:</span> We focus on the heart of your story, ensuring your unique message resonates with viewers.
+          </p>
+        </div>
+
+        <div className="flex items-start">
+          <span className="text-teal-400 mr-4">-</span>
+          <p className="flex-1">
+            <span className="font-semibold ">Proven Track Record:</span> Having served numerous organizations and individuals—from colleges to couples on their big day—we know how to deliver on-time, on-budget, and above expectations.
+          </p>
+        </div>
+
+        <div className="flex items-start">
+          <span className="text-teal-400 mr-4">-</span>
+          <p className="flex-1">
+            <span className="font-semibold ">Genuine Partnership:</span> We collaborate closely with you from concept to final cut, making your vision our priority.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <Footer />
     </div>
