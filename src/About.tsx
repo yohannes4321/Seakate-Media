@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import logoImage from './assets/photo_2025-03-29_16-16-14.jpg';
+import logoImage from './assets/photo_1_2025-03-30_10-00-28.jpg';
 import { Footer } from './footer';
 
 function About() {

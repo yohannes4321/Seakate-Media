@@ -2,7 +2,7 @@ import React from 'react';
 import {Footer} from './footer'
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import logoImage from './assets/photo_2025-03-29_16-16-14.jpg'; // Import your logo image
+import logoImage from './assets/photo_1_2025-03-30_10-00-28.jpg'; // Import your logo image
  
 function Services() {
   const location = useLocation();
@@ -82,7 +82,7 @@ function Services() {
             Services We Provide<br />
             </h1>
             <p className="text-xl md:text-2xl text-gray-300">
-            
+              From commercial shoots to intimate portraits, we bring your vision to life through our lens.
             </p>
           </div>
         </div>
@@ -92,6 +92,32 @@ function Services() {
       <section className="py-20 bg-gray-900">
   <div className="container mx-auto px-4">
     {/* Original Commercial Section (Image Left, Text Right) */}
+    <div className="grid md:grid-cols-2 gap-16 items-center">
+      <div className="md:order-2">
+        <img 
+          src="https://images.unsplash.com/photo-1496747611176-843222e1e57c"
+          alt="Portrait Photography"
+          className="w-full h-[600px] object-cover rounded-lg shadow-2xl"
+        />
+      </div>
+      <div className="md:order-1">
+        <h2 className="text-yellow-400 text-xl font-semibold mb-6"></h2>
+        <h3 className="text-4xl md:text-5xl mb-8 heading-font text-teal ">
+          Photography
+        </h3>
+        <p className="text-xl text-gray-300 mb-6">
+        - Professional portraits, event photography, branded image libraries, and personal milestones.   
+<br/>
+- Expert composition, lighting, and styling to preserve your memories with clarity and charm. 
+        </p>
+        <ul className="text-xl text-gray-300 space-y-4">
+          <li>• Professional Headshots</li>
+          <li>• Family Portraits</li>
+          <li>• Creative Portraiture</li>
+          <li>• Editorial Photography</li>
+        </ul>
+      </div>
+    </div>
     <div className="grid md:grid-cols-2 gap-16 items-center mb-32">
       <div>
         <img 
@@ -121,32 +147,7 @@ function Services() {
     </div>
 
     {/* Reversed Section (Image Right, Text Left) */}
-    <div className="grid md:grid-cols-2 gap-16 items-center">
-      <div className="md:order-2">
-        <img 
-          src="https://images.unsplash.com/photo-1496747611176-843222e1e57c"
-          alt="Portrait Photography"
-          className="w-full h-[600px] object-cover rounded-lg shadow-2xl"
-        />
-      </div>
-      <div className="md:order-1">
-        <h2 className="text-yellow-400 text-xl font-semibold mb-6"></h2>
-        <h3 className="text-4xl md:text-5xl mb-8 heading-font text-teal ">
-          Photography
-        </h3>
-        <p className="text-xl text-gray-300 mb-6">
-        - Professional portraits, event photography, branded image libraries, and personal milestones.   
-<br/>
-- Expert composition, lighting, and styling to preserve your memories with clarity and charm. 
-        </p>
-        <ul className="text-xl text-gray-300 space-y-4">
-          <li>• Professional Headshots</li>
-          <li>• Family Portraits</li>
-          <li>• Creative Portraiture</li>
-          <li>• Editorial Photography</li>
-        </ul>
-      </div>
-    </div>
+  
   </div>
 </section>
 <div className="grid md:grid-cols-2 gap-16 items-center mb-32">

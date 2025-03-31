@@ -3,7 +3,7 @@ import { CircleIcon, PlayCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Footer } from './footer';
 import { useLocation } from 'react-router-dom';
-import logoImage from './assets/photo_2025-03-29_16-16-14.jpg'; // Import your logo image
+import logoImage from './assets/photo_1_2025-03-30_10-00-28.jpg'; // Import your logo image
  
 function Projects() {
   const location = useLocation();
