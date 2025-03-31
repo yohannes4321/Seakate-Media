@@ -3,7 +3,9 @@ import {Footer} from './footer'
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import logoImage from './assets/photo_1_2025-03-30_10-00-28.jpg'; // Import your logo image
- 
+import img1 from './assets/1st/Screenshot (123).png';
+import img2 from './assets/1st/cg5fcukvbegabsx9ypgl (1).jpg'
+import img3 from './assets/1st/jrzmqrsmc4rhr7kom8aw.jpg'
 function Services() {
   const location = useLocation();
   return (
@@ -89,13 +91,13 @@ function Services() {
       </section>
 
       {/* Main Services */}
-      <section className="py-20 bg-gray-900">
-  <div className="container mx-auto px-4">
+      <section className="  bg-gray-900">
+  <div className="  container mx-auto px-4">
     {/* Original Commercial Section (Image Left, Text Right) */}
     <div className="grid md:grid-cols-2 gap-16 items-center">
       <div className="md:order-2">
         <img 
-          src="https://images.unsplash.com/photo-1496747611176-843222e1e57c"
+          src={img2}
           alt="Portrait Photography"
           className="w-full h-[600px] object-cover rounded-lg shadow-2xl"
         />
@@ -121,7 +123,7 @@ function Services() {
     <div className="grid md:grid-cols-2 gap-16 items-center mb-32">
       <div>
         <img 
-          src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e"
+          src={img3}
           alt="Commercial Photography"
           className="w-full h-[600px] object-cover rounded-lg shadow-2xl"
         />
@@ -145,15 +147,43 @@ function Services() {
         </ul>
       </div>
     </div>
+    
 
     {/* Reversed Section (Image Right, Text Left) */}
   
   </div>
 </section>
+
+<div className="grid   md:grid-cols-2 gap-16 items-center">
+      <div className="md:order-2">
+        <img 
+          src="https://images.unsplash.com/photo-1496747611176-843222e1e57c"
+          alt="Portrait Photography"
+          className="w-full h-[600px] object-cover rounded-lg shadow-2xl"
+        />
+      </div>
+      <div className="md:order-1">
+        <h2 className="text-yellow-400 text-xl font-semibold mb-6"></h2>
+        <h3 className="text-4xl md:text-5xl mb-8 heading-font text-teal ">
+        Creative Consultation   
+        </h3>
+        <p className="text-xl text-gray-300 mb-6">
+        Ideation sessions, storyboarding, and planning for campaigns or special projects.   
+<br/>
+- Guidance on how to maximize your budget, brand consistency, and viewer engagement. 
+        </p>
+        <ul className="text-xl text-gray-300 space-y-4">
+          <li>• Professional Headshots</li>
+          <li>• Family Portraits</li>
+          <li>• Creative Portraiture</li>
+          <li>• Editorial Photography</li>
+        </ul>
+      </div>
+    </div>
 <div className="grid md:grid-cols-2 gap-16 items-center mb-32">
       <div>
         <img 
-          src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e"
+          src={img2}
           alt="Commercial Photography"
           className="w-full h-[600px] object-cover rounded-lg shadow-2xl"
         />
@@ -180,32 +210,7 @@ function Services() {
         </ul>
       </div>
     </div>
-    <div className="grid md:grid-cols-2 gap-16 items-center">
-      <div className="md:order-2">
-        <img 
-          src="https://images.unsplash.com/photo-1496747611176-843222e1e57c"
-          alt="Portrait Photography"
-          className="w-full h-[600px] object-cover rounded-lg shadow-2xl"
-        />
-      </div>
-      <div className="md:order-1">
-        <h2 className="text-yellow-400 text-xl font-semibold mb-6"></h2>
-        <h3 className="text-4xl md:text-5xl mb-8 heading-font text-teal ">
-        Creative Consultation   
-        </h3>
-        <p className="text-xl text-gray-300 mb-6">
-        Ideation sessions, storyboarding, and planning for campaigns or special projects.   
-<br/>
-- Guidance on how to maximize your budget, brand consistency, and viewer engagement. 
-        </p>
-        <ul className="text-xl text-gray-300 space-y-4">
-          <li>• Professional Headshots</li>
-          <li>• Family Portraits</li>
-          <li>• Creative Portraiture</li>
-          <li>• Editorial Photography</li>
-        </ul>
-      </div>
-    </div>
+   
 
       {/* Service Grid */}
       <section className="py-20">
@@ -217,7 +222,7 @@ function Services() {
           <div className="grid md:grid-cols-3 gap-8 bg-gray-900  ">
             <div className="service-card p-8 rounded-lg bg-gray-900 ">
               <img 
-                src="https://images.unsplash.com/photo-1496747611176-843222e1e57c"
+                src={img3}
                 alt="Portrait Photography"
                 className="w-full h-48 object-cover rounded-lg mb-6"
               />
