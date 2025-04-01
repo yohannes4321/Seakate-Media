@@ -177,8 +177,8 @@ function Home() {
           />
           <div className="absolute inset-0 bg-[#04E4D8]/0 group-hover:bg-[#04E4D8]/20 transition-colors duration-300"></div>
         </div>
-        <h4 className="text-2xl mb-2">Project Title 1</h4>
-        <a href="#" className="text-sm text-[#04E4D8] hover:underline">VIEW PROJECT</a>
+        <h4 className="text-2xl mb-2">Healthy Churches</h4>
+        
       </div>
       
       <div className="group">
@@ -190,8 +190,8 @@ function Home() {
           />
           <div className="absolute inset-0 bg-[#04E4D8]/0 group-hover:bg-[#04E4D8]/20 transition-colors duration-300"></div>
         </div>
-        <h4 className="text-2xl mb-2">Project Title 2</h4>
-        <a href="#" className="text-sm text-[#04E4D8] hover:underline">VIEW PROJECT</a>
+        <h4 className="text-2xl mb-2">OFESA Lavia  </h4>
+     
       </div>
       
       <div className="group">
@@ -203,8 +203,8 @@ function Home() {
           />
           <div className="absolute inset-0 bg-[#04E4D8]/0 group-hover:bg-[#04E4D8]/20 transition-colors duration-300"></div>
         </div>
-        <h4 className="text-2xl mb-2">Project Title 3</h4>
-        <a href="#" className="text-sm text-[#04E4D8] hover:underline">VIEW PROJECT</a>
+        <h4 className="text-2xl mb-2 heading-font">Elohim Malauka  </h4>
+ 
       </div>
     </div>
   </div>

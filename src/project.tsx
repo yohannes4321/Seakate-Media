@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom';
 import { Footer } from './footer';
 import { useLocation } from 'react-router-dom';
 import logoImage from './assets/photo_1_2025-03-30_10-00-28.jpg'; // Import your logo image
- 
+import img1 from './assets/video/Screenshot (124).png';
+import img2 from './assets/video/i.jpg';
+import img4 from './assets/video/444.jpg';
+import  img3  from './assets/video/333.jpg';
+
 function Projects() {
   const location = useLocation();
   const [playingVideo, setPlayingVideo] = useState<string | null>(null);
@@ -12,10 +16,11 @@ function Projects() {
   const projects = [
     {
       type: 'video',
-      src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743306830/photo/gdrjtwxzokay87vlpjsn.mp4',
-      thumbnail: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      title: 'Brand Campaign',
-      description: 'A dynamic brand campaign that captured the essence of modern luxury.',
+      src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743481428/final/rbzoohknekzp0gmnfmtq.mp4',
+ 
+      title: 'Bethany Ward Testimony',
+      description: 'A student story that highlights the journey and experiences of Bethany Ward at Hillsong College.',
+      thumbnail:'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743481485/final/cm3b1higtcggz1e11ruq.jpg' ,
     },
     {
       type: 'image',
@@ -25,9 +30,9 @@ function Projects() {
     },
     {
       type: 'video',
-      src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743306880/photo/kl93gt3qqzriit1hnnq8.mp4',
-      thumbnail: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      title: 'Social Media Campaign',
+      thumbnail:  'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743480131/final/b91djim3mi1zjdaycvkl.jpg',
+      title: 'Joakim Pärlesköld | Student Stories | Hillsong College',
+      src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743481026/final/lum8mgx5hozxmla6lquq.mp4',
       description: 'Engaging social media content that drives engagement.',
     },
     {
@@ -39,16 +44,58 @@ function Projects() {
     {
       type: 'video',
       src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743306898/photo/xzxtpj8wcbkmazrl2a5e.mp4',
-      thumbnail: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      thumbnail: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743480689/final/dd5rssyfpexhb7yv3uo0.png',
       title: 'Event Coverage',
       description: 'Professional event coverage and storytelling.',
     },
     {
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743480793/final/giiguimxhwalzqrsuwjk.jpg',
       title: 'Digital Marketing',
       description: 'Strategic digital marketing campaigns that deliver results.',
+      
     },
+    {
+      type: 'video',
+      src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743478845/final/rtikmntvfbyk7j99rer6.mp4',
+      thumbnail: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743482042/final/jybngdkvtbms0qh7xpts.jpg',
+      title: 'Jonathan Klassen Testimony ',
+      description: 'Hillsong College Testimony',
+    },
+    {
+      type: 'image',
+      src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1741394773/photo/jrzmqrsmc4rhr7kom8aw.jpg',
+      title: 'Product Photography',
+      description: 'Premium product photography that elevates brand perception.',
+    },
+    {
+      type: 'video',
+      src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743306880/photo/kl93gt3qqzriit1hnnq8.mp4',
+      thumbnail: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743482124/final/ucj3fbdsghyzcfcj93qn.jpg',
+      title: 'Hills Campus Tour | Sydney, Australia',
+      description: 'A captivating tour of Hillsong College\'s Sydney campus.',
+    },
+    {
+      type: 'image',
+      src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743482286/final/vpwrgdut4huvdrqj3xc8.png',
+      title: 'Brand Identity',
+      description: 'Comprehensive brand identity development and guidelines.',
+    },
+    {
+      type: 'video',
+      src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743480457/final/m42kfvqyfzwvnhclzfx6.mp4',
+      thumbnail: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743480220/final/izvqeyr241hvquh5fftb.jpg',  
+      title: 'Event Coverage',
+      description: 'Professional event coverage and storytelling.',
+    },
+    {
+      type: 'image',
+      src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743480131/final/b91djim3mi1zjdaycvkl.jpg',
+      title: 'Joakim Pärlesköld | Student Stories | Hillsong College',
+      description: 'A student story that highlights the journey and experiences of Joakim Pärlesköld at Hillsong College.',
+      
+    }
+    
   ];
 
   return (
