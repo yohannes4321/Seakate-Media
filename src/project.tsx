@@ -13,6 +13,8 @@ import video2 from './assets/video/Joakim Pärlesköld _ Student Stories _ Hills
 import video3 from './assets/video/Michael Wortley _ Student Testimony.mp4';
 import video4 from './assets/video/Hills Campus Tour _ Sydney, Australia.mp4';
 import video5 from './assets/video/Jonathan Klassen Testimony.mp4'
+import video6 from './assets/video/kl93gt3qqzriit1hnnq8.mp4';
+import img11 from './assets/video/Screenshot (124).png'
 function Projects() {
   const location = useLocation();
   const [playingVideo, setPlayingVideo] = useState<string | null>(null);
@@ -20,57 +22,10 @@ function Projects() {
   const projects = [
     {
       type: 'video',
-      src: video1,
- 
-      title: 'Bethany Ward Testimony',
-      description: 'A student story that highlights the journey and experiences of Bethany Ward at Hillsong College.',
-      thumbnail:'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743481485/final/cm3b1higtcggz1e11ruq.jpg' ,
-    },
-    {
-      type: 'image',
-      src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1741394773/photo/jrzmqrsmc4rhr7kom8aw.jpg',
-      title: 'Church Photography',
-      description: 'Capturing the essence of church events and gatherings.',
-    },
-    {
-      type: 'video',
-      thumbnail:  'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743480131/final/b91djim3mi1zjdaycvkl.jpg',
-      title: 'Joakim Pärlesköld | Student Stories | Hillsong College',
-      src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743481026/final/lum8mgx5hozxmla6lquq.mp4',
-      description: 'Engaging social media content that drives engagement.',
-    },
-    {
-      type: 'image',
-      src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1741642419/photo/cg5fcukvbegabsx9ypgl.jpg',
-      title: 'Brand Identity',
-      description: 'Comprehensive brand identity development and guidelines.',
-    },
-    {
-      type: 'video',
-      src: video2,
-      thumbnail: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743480689/final/dd5rssyfpexhb7yv3uo0.png',
-      title: 'Flor And Matthiew',
-      description: 'A student story that highlights the journey and experiences of Flor and Matthiew at Hillsong College.',
-    },
-    {
-      type: 'image',
-      src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743480793/final/giiguimxhwalzqrsuwjk.jpg',
-      title: 'Issac Pau Australia',
-      description: 'A student story that highlights the journey and experiences of Issac Pau at Hillsong College.',
-      
-    },
-    {
-      type: 'video',
       src: video5,
       thumbnail: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743482042/final/jybngdkvtbms0qh7xpts.jpg',
       title: 'Jonathan Klassen Testimony ',
       description: 'Hillsong College Testimony',
-    },
-    {
-      type: 'image',
-      src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1741394773/photo/jrzmqrsmc4rhr7kom8aw.jpg',
-      title: 'Product Photography',
-      description: 'Premium product photography that elevates brand perception.',
     },
     {
       type: 'video',
@@ -80,10 +35,19 @@ function Projects() {
       description: 'A captivating tour of Hillsong College\'s Sydney campus.',
     },
     {
-      type: 'image',
-      src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743482286/final/vpwrgdut4huvdrqj3xc8.png',
-      title: 'Brand Identity',
-      description: 'Comprehensive brand identity development and guidelines.',
+      type: 'video',
+      src: video2,
+      thumbnail: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743480131/final/b91djim3mi1zjdaycvkl.jpg',
+      title: 'Flor And Matthiew',
+      description: 'A student story that highlights the journey and experiences of Flor and Matthiew at Hillsong College.',
+    },
+    {
+      type: 'video',
+      src: video1,
+ 
+      title: 'Bethany Ward Testimony',
+      description: 'A student story that highlights the journey and experiences of Bethany Ward at Hillsong College.',
+      thumbnail:'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743481485/final/cm3b1higtcggz1e11ruq.jpg' ,
     },
     {
       type: 'video',
@@ -92,6 +56,48 @@ function Projects() {
       title: 'Event Coverage',
       description: 'Professional event coverage and storytelling.',
     },
+    {
+      type: 'image',
+      src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1741394773/photo/jrzmqrsmc4rhr7kom8aw.jpg',
+      title: 'Church Photography',
+      description: 'Capturing the essence of church events and gatherings.',
+    },
+    {
+      type: 'video',
+      thumbnail:  img11,
+      title: 'Joakim Pärlesköld | Student Stories | Hillsong College',
+      src: video6,
+      description: 'Engaging social media content that drives engagement.',
+    },
+    {
+      type: 'image',
+      src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1741642419/photo/cg5fcukvbegabsx9ypgl.jpg',
+      title: 'Brand Identity',
+      description: 'Comprehensive brand identity development and guidelines.',
+    },
+    
+    {
+      type: 'image',
+      src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743480793/final/giiguimxhwalzqrsuwjk.jpg',
+      title: 'Issac Pau Australia',
+      description: 'A student story that highlights the journey and experiences of Issac Pau at Hillsong College.',
+      
+    },
+   
+    {
+      type: 'image',
+      src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1741394773/photo/jrzmqrsmc4rhr7kom8aw.jpg',
+      title: 'Product Photography',
+      description: 'Premium product photography that elevates brand perception.',
+    },
+    
+    {
+      type: 'image',
+      src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743482286/final/vpwrgdut4huvdrqj3xc8.png',
+      title: 'Brand Identity',
+      description: 'Comprehensive brand identity development and guidelines.',
+    },
+    
     {
       type: 'image',
       src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743480131/final/b91djim3mi1zjdaycvkl.jpg',
@@ -104,71 +110,48 @@ function Projects() {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white font-playfair">
-      {/* Navigation */}
-      <nav className="fixed w-full z-50 bg-gray-900/90 backdrop-blur-sm">
-      <div className="container mx-auto px-8 py-3 flex items-center">
-        {/* Circular Logo on Left (Fixed) */}
-        <div className="h-16 w-16 rounded-full bg-white p-1 mr-4 flex-shrink-0"> {/* Circular container with white bg */}
+       <nav className="fixed w-full z-50 bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-sm shadow-lg">
+      <div className="container mx-auto px-8 py-4 flex items-center">
+        {/* Magnified Logo with Stylish Look */}
+        <div className="h-20 w-30 rounded-full bg-white p-2 mr-6 shadow-xl border-2 border-[#04E4D8] flex-shrink-0">
           <Link to="/" className="h-full w-full flex items-center justify-center">
             <img 
               src={logoImage}
-              alt="KYU MEDIA Logo"
-              className="h-full w-full rounded-full object-cover" // Makes image circular
+              alt="Seakate Media Logo"
+              className="h-full w-full rounded-full object-cover" // Magnified and highlighted
             />
           </Link>
         </div>
 
-        {/* Centered Navigation Links */}
-        <div className="hidden md:flex mx-auto space-x-8 items-center">
-          <Link 
-            to="/" 
-            className={`relative px-2 py-1 text-white hover:text-[#04E4D8] transition-colors font-playfair ${location.pathname === '/' ? 'text-[#04E4D8]' : ''}`}
-          >
-            HOME
-            {location.pathname === '/' && (
-              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-[#04E4D8] rounded-full"></span>
-            )}
-          </Link>
-          <Link 
-            to="/projects" 
-            className={`relative px-2 py-1 text-white hover:text-[#04E4D8] transition-colors font-playfair ${location.pathname === '/projects' ? 'text-[#04E4D8]' : ''}`}
-          >
-            PROJECTS
-            {location.pathname === '/projects' && (
-              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-[#04E4D8] rounded-full"></span>
-            )}
-          </Link>
-          <Link 
-            to="/services" 
-            className={`relative px-2 py-1 text-white hover:text-[#04E4D8] transition-colors font-playfair ${location.pathname === '/services' ? 'text-[#04E4D8]' : ''}`}
-          >
-            SERVICES
-            {location.pathname === '/services' && (
-              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-[#04E4D8] rounded-full"></span>
-            )}
-          </Link>
-          <Link 
-            to="/about" 
-            className={`relative px-2 py-1 text-white hover:text-[#04E4D8] transition-colors font-playfair ${location.pathname === '/about' ? 'text-[#04E4D8]' : ''}`}
-          >
-            ABOUT
-            {location.pathname === '/about' && (
-              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-[#04E4D8] rounded-full"></span>
-            )}
-          </Link>
-          <Link 
-            to="/contact" 
-            className={`relative px-2 py-1 text-white hover:text-[#04E4D8] transition-colors font-playfair ${location.pathname === '/contact' ? 'text-[#04E4D8]' : ''}`}
-          >
-            CONTACT
-            {location.pathname === '/contact' && (
-              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-[#04E4D8] rounded-full"></span>
-            )}
-          </Link>
+        {/* Centered Navigation Links with Highlighted Hover Effects */}
+        <div className="hidden md:flex mx-auto space-x-8 items-center heading-font">
+          {[
+            { path: "/", label: "HOME" },
+            { path: "/projects", label: "PROJECTS" },
+            { path: "/services", label: "SERVICES" },
+            { path: "/about", label: "ABOUT" },
+            { path: "/contact", label: "CONTACT" }
+          ].map((link) => (
+            <Link 
+              key={link.path}
+              to={link.path}
+              className={`relative px-3 py-2 text-white font-semibold transition-all heading-font
+                ${location.pathname === link.path ? 'text-[#04E4D8] scale-110' : 'hover:text-[#04E4D8] hover:scale-105'}`}
+            >
+              {link.label}
+              {location.pathname === link.path && (
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-1 bg-[#04E4D8] heading-font rounded-full"></span>
+              )}
+            </Link>
+          ))}
         </div>
       </div>
     </nav>
- 
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
 
       {/* Projects Grid */}
       <div className="px-16 pb-24">

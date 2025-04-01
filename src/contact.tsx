@@ -54,70 +54,47 @@ function Contact() {
   return (
     <div className="bg-gray-900">
 
-       <nav className="fixed w-full z-50 bg-gray-900/90 backdrop-blur-sm">
-      <div className="container mx-auto px-8 py-3 flex items-center">
-        {/* Circular Logo on Left (Fixed) */}
-        <div className="h-16 w-16 rounded-full bg-white p-1 mr-4 flex-shrink-0"> {/* Circular container with white bg */}
+<nav className="fixed w-full z-50 bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-sm shadow-lg">
+      <div className="container mx-auto px-8 py-4 flex items-center">
+        {/* Magnified Logo with Stylish Look */}
+        <div className="h-20 w-30 rounded-full bg-white p-2 mr-6 shadow-xl border-2 border-[#04E4D8] flex-shrink-0">
           <Link to="/" className="h-full w-full flex items-center justify-center">
             <img 
               src={logoImage}
-              alt="KYU MEDIA Logo"
-              className="h-full w-full rounded-full object-cover" // Makes image circular
+              alt="Seakate Media Logo"
+              className="h-full w-full rounded-full object-cover" // Magnified and highlighted
             />
           </Link>
         </div>
 
-        {/* Centered Navigation Links */}
-        <div className="hidden md:flex mx-auto space-x-8 items-center">
-          <Link 
-            to="/" 
-            className={`relative px-2 py-1 text-white hover:text-[#04E4D8] transition-colors font-playfair ${location.pathname === '/' ? 'text-[#04E4D8]' : ''}`}
-          >
-            HOME
-            {location.pathname === '/' && (
-              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-[#04E4D8] rounded-full"></span>
-            )}
-          </Link>
-          <Link 
-            to="/projects" 
-            className={`relative px-2 py-1 text-white hover:text-[#04E4D8] transition-colors font-playfair ${location.pathname === '/projects' ? 'text-[#04E4D8]' : ''}`}
-          >
-            PROJECTS
-            {location.pathname === '/projects' && (
-              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-[#04E4D8] rounded-full"></span>
-            )}
-          </Link>
-          <Link 
-            to="/services" 
-            className={`relative px-2 py-1 text-white hover:text-[#04E4D8] transition-colors font-playfair ${location.pathname === '/services' ? 'text-[#04E4D8]' : ''}`}
-          >
-            SERVICES
-            {location.pathname === '/services' && (
-              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-[#04E4D8] rounded-full"></span>
-            )}
-          </Link>
-          <Link 
-            to="/about" 
-            className={`relative px-2 py-1 text-white hover:text-[#04E4D8] transition-colors font-playfair ${location.pathname === '/about' ? 'text-[#04E4D8]' : ''}`}
-          >
-            ABOUT
-            {location.pathname === '/about' && (
-              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-[#04E4D8] rounded-full"></span>
-            )}
-          </Link>
-          <Link 
-            to="/contact" 
-            className={`relative px-2 py-1 text-white hover:text-[#04E4D8] transition-colors font-playfair ${location.pathname === '/contact' ? 'text-[#04E4D8]' : ''}`}
-          >
-            CONTACT
-            {location.pathname === '/contact' && (
-              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-0.5 bg-[#04E4D8] rounded-full"></span>
-            )}
-          </Link>
+        {/* Centered Navigation Links with Highlighted Hover Effects */}
+        <div className="hidden md:flex mx-auto space-x-8 items-center heading-font">
+          {[
+            { path: "/", label: "HOME" },
+            { path: "/projects", label: "PROJECTS" },
+            { path: "/services", label: "SERVICES" },
+            { path: "/about", label: "ABOUT" },
+            { path: "/contact", label: "CONTACT" }
+          ].map((link) => (
+            <Link 
+              key={link.path}
+              to={link.path}
+              className={`relative px-3 py-2 text-white font-semibold transition-all heading-font
+                ${location.pathname === link.path ? 'text-[#04E4D8] scale-110' : 'hover:text-[#04E4D8] hover:scale-105'}`}
+            >
+              {link.label}
+              {location.pathname === link.path && (
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-1 bg-[#04E4D8] heading-font rounded-full"></span>
+              )}
+            </Link>
+          ))}
         </div>
       </div>
     </nav>
-
+    <br/>
+    <br/>
+    <br/>
+    <br/>
       {/* Hero Section */}
       <section className="relative h-[40vh] overflow-hidden mb-20">
         <div className="absolute inset-0">
