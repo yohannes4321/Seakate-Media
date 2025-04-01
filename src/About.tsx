@@ -54,12 +54,12 @@ function About() {
       
       <div className="min-h-screen bg-gray-900 text-white pt-20">
         {/* Hero Section - Full width */}
-        <section className="py-32 bg-gray-900">
+        <section className="py-10 bg-gray-900">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl">
-              <h1 className="text-7xl md:text-8xl lg:text-7xl font-bold heading-font leading-tight text-teal">
-                Our Misson,
-              </h1>
+            <h2 className="text-5xl md:text-6xl mb-8 heading-font text-teal">
+                  Our Mission
+                </h2>
               <p className="text-xl md:text-2xl text-gray-300">
               To transform stories into compelling visual experiences that inspire, connect, and leave lasting impressions. We believe in the power of authentic storytelling to bridge communities and create meaningful impact.
               </p>
@@ -68,7 +68,7 @@ function About() {
         </section>
 
         {/* Brand Section - Text left, image right */}
-        <section className="py-20 bg-gray-900">
+        <section className=" bg-gray-900">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="md:w-1/2">
@@ -78,8 +78,8 @@ function About() {
                 <p className="text-xl text-gray-300 mb-6">
                   Sekeat Media represents innovation, creativity, and excellence in visual storytelling. Our brand is built on trust, professionalism, and the consistent delivery of exceptional content that exceeds expectations.
                 </p>
-                <h2 className="text-5xl md:text-6xl mb-8 heading-font text-teal mt-12">
-                  Our Approach
+                <h2 className="text-5xl md:text-6xl mb-8 heading-font text-teal">
+                  Our Approach 
                 </h2>
                 <p className="text-xl text-gray-300">
                   We combine technical expertise with creative vision, working closely with clients to understand their unique needs and deliver tailored solutions that achieve their goals while maintaining the highest standards of quality.
@@ -108,9 +108,10 @@ function About() {
                 />
               </div>
               <div className="md:w-1/2 order-2 md:order-2">
-                <h3 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 heading-font leading-tight text-teal">
-                   VISUAL<br />EXCELLENCE
-                </h3>
+                
+                <h2 className="text-5xl md:text-6xl mb-8 heading-font text-teal">
+                VISUAL<br />EXCELLENCE
+                </h2>
                 <p className="text-xl text-gray-300 mb-6">
                    we've been crafting visual stories that resonate with audiences worldwide.
                 </p>
@@ -128,9 +129,10 @@ function About() {
         {/* Team Section - Full width */}
         <section className="py-20 bg-gray-900">
           <div className="container mx-auto px-4">
-            <h3 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-16 heading-font leading-tight text-teal">
-              MEET THE VISIONARIES
-            </h3>
+            
+            <h2 className="text-5xl md:text-6xl mb-8 heading-font text-teal">
+            MEET THE VISIONARIES
+                </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="flex flex-col">
                 <div className="aspect-square overflow-hidden rounded-lg mb-6">
@@ -170,9 +172,7 @@ function About() {
         </section>
         <section className="py-20 bg-gray-900">
           <div className="container mx-auto px-4">
-            <h3 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-16 heading-font leading-tight text-teal">
-              WHAT SETS US APART
-            </h3>
+ 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="p-8 rounded-lg bg-gray-800 hover:bg-gray-700 transition-all h-full">
                 <h4 className="text-4xl mb-6 heading-font">ARTISTRY</h4>
