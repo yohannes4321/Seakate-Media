@@ -8,7 +8,11 @@ import img1 from './assets/video/Screenshot (124).png';
 import img2 from './assets/video/i.jpg';
 import img4 from './assets/video/444.jpg';
 import  img3  from './assets/video/333.jpg';
-
+import video1 from './assets/video/Bethany Ward Testimony.mp4';
+import video2 from './assets/video/Joakim Pärlesköld _ Student Stories _ Hillsong College.mp4';
+import video3 from './assets/video/Michael Wortley _ Student Testimony.mp4';
+import video4 from './assets/video/Hills Campus Tour _ Sydney, Australia.mp4';
+import video5 from './assets/video/Jonathan Klassen Testimony.mp4'
 function Projects() {
   const location = useLocation();
   const [playingVideo, setPlayingVideo] = useState<string | null>(null);
@@ -16,7 +20,7 @@ function Projects() {
   const projects = [
     {
       type: 'video',
-      src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743481428/final/rbzoohknekzp0gmnfmtq.mp4',
+      src: video1,
  
       title: 'Bethany Ward Testimony',
       description: 'A student story that highlights the journey and experiences of Bethany Ward at Hillsong College.',
@@ -25,8 +29,8 @@ function Projects() {
     {
       type: 'image',
       src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1741394773/photo/jrzmqrsmc4rhr7kom8aw.jpg',
-      title: 'Product Photography',
-      description: 'Premium product photography that elevates brand perception.',
+      title: 'Church Photography',
+      description: 'Capturing the essence of church events and gatherings.',
     },
     {
       type: 'video',
@@ -43,21 +47,21 @@ function Projects() {
     },
     {
       type: 'video',
-      src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743306898/photo/xzxtpj8wcbkmazrl2a5e.mp4',
+      src: video2,
       thumbnail: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743480689/final/dd5rssyfpexhb7yv3uo0.png',
-      title: 'Event Coverage',
-      description: 'Professional event coverage and storytelling.',
+      title: 'Flor And Matthiew',
+      description: 'A student story that highlights the journey and experiences of Flor and Matthiew at Hillsong College.',
     },
     {
       type: 'image',
       src: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743480793/final/giiguimxhwalzqrsuwjk.jpg',
-      title: 'Digital Marketing',
-      description: 'Strategic digital marketing campaigns that deliver results.',
+      title: 'Issac Pau Australia',
+      description: 'A student story that highlights the journey and experiences of Issac Pau at Hillsong College.',
       
     },
     {
       type: 'video',
-      src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743478845/final/rtikmntvfbyk7j99rer6.mp4',
+      src: video5,
       thumbnail: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743482042/final/jybngdkvtbms0qh7xpts.jpg',
       title: 'Jonathan Klassen Testimony ',
       description: 'Hillsong College Testimony',
@@ -70,7 +74,7 @@ function Projects() {
     },
     {
       type: 'video',
-      src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743306880/photo/kl93gt3qqzriit1hnnq8.mp4',
+      src: video4,
       thumbnail: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743482124/final/ucj3fbdsghyzcfcj93qn.jpg',
       title: 'Hills Campus Tour | Sydney, Australia',
       description: 'A captivating tour of Hillsong College\'s Sydney campus.',
@@ -83,7 +87,7 @@ function Projects() {
     },
     {
       type: 'video',
-      src: 'https://res.cloudinary.com/di5zfjqlt/video/upload/v1743480457/final/m42kfvqyfzwvnhclzfx6.mp4',
+      src: video3,
       thumbnail: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743480220/final/izvqeyr241hvquh5fftb.jpg',  
       title: 'Event Coverage',
       description: 'Professional event coverage and storytelling.',
@@ -164,21 +168,7 @@ function Projects() {
         </div>
       </div>
     </nav>
-
-      {/* Projects Header */}
-      <div className="px-16 pt-32 pb-20">
-        <div className="flex items-center gap-2">
-         
-      
-        </div>
-        
-        <h1 className="text-[#04E4D8] text-7xl font-light mt-8 mb-6">Our Projects</h1>
-        
-        <div className="max-w-2xl space-y-6 text-xl text-gray-300 font-montserrat">
-          <p>A showcase of our finest work across various industries and mediums.</p>
-          <p>Each project represents our commitment to excellence and innovation.</p>
-        </div>
-      </div>
+ 
 
       {/* Projects Grid */}
       <div className="px-16 pb-24">

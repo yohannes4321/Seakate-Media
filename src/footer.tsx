@@ -7,7 +7,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-[#04E4D8] font-bold text-xl mb-4">Sekeat Media</h3>
+            <h3 className="text-[#04E4D8] font-bold text-xl mb-4">Seakate Media</h3>
             <p className="text-gray-400">
               Connecting Stories, Shaping Perspectives
             </p>
@@ -25,20 +25,31 @@ export function Footer() {
             <h4 className="text-[#04E4D8] font-bold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
               <li>info@sekeatmedia.com</li>
-              <li>+1 (555) 123-4567</li>
-              <li>123 Creative Ave</li>
-              <li>Design District, NY 10001</li>
+              
+              <li>Location is 7 Durham Street</li>
+              <li>Mount Druitt, 2770 , NSW</li>
             </ul>
           </div>
           <div>
             <h4 className="text-[#04E4D8] font-bold mb-4">Follow Us</h4>
             <div className="flex space-x-4">
-              <Facebook className="w-6 h-6 text-gray-400 hover:text-[#04E4D8] cursor-pointer transition-colors" />
-              <Twitter className="w-6 h-6 text-gray-400 hover:text-[#04E4D8] cursor-pointer transition-colors" />
-              <Instagram className="w-6 h-6 text-gray-400 hover:text-[#04E4D8] cursor-pointer transition-colors" />
-              <Linkedin className="w-6 h-6 text-gray-400 hover:text-[#04E4D8] cursor-pointer transition-colors" />
-              <Mail className="w-6 h-6 text-gray-400 hover:text-[#04E4D8] cursor-pointer transition-colors" />
-            </div>
+  <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+    <Facebook className="w-6 h-6 text-gray-400 hover:text-[#04E4D8] cursor-pointer transition-colors" />
+  </a>
+  <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
+    <Twitter className="w-6 h-6 text-gray-400 hover:text-[#04E4D8] cursor-pointer transition-colors" />
+  </a>
+  <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+    <Instagram className="w-6 h-6 text-gray-400 hover:text-[#04E4D8] cursor-pointer transition-colors" />
+  </a>
+  <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+    <Linkedin className="w-6 h-6 text-gray-400 hover:text-[#04E4D8] cursor-pointer transition-colors" />
+  </a>
+  <a href="mailto:your@email.com">
+    <Mail className="w-6 h-6 text-gray-400 hover:text-[#04E4D8] cursor-pointer transition-colors" />
+  </a>
+</div>
+
           </div>
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">

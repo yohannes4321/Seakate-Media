@@ -12,7 +12,7 @@ import logoImage from './assets/photo_1_2025-03-30_10-00-28.jpg';
 import img1 from './assets/photo_1_2025-03-30_10-03-07.jpg';
 import img2 from './assets/photo_2_2025-03-30_10-03-07.jpg';
 import img3 from './assets/photo_3_2025-03-30_10-01-32.jpg'
- 
+import img4 from './assets/1st/jrzmqrsmc4rhr7kom8aw.jpg'
  // Import your logo image
 function Home() {
   const location = useLocation();
@@ -23,7 +23,7 @@ function Home() {
       <nav className="fixed w-full z-50 bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-sm shadow-lg">
       <div className="container mx-auto px-8 py-4 flex items-center">
         {/* Magnified Logo with Stylish Look */}
-        <div className="h-20 w-20 rounded-full bg-white p-2 mr-6 shadow-xl border-2 border-[#04E4D8] flex-shrink-0">
+        <div className="h-20 w-30 rounded-full bg-white p-2 mr-6 shadow-xl border-2 border-[#04E4D8] flex-shrink-0">
           <Link to="/" className="h-full w-full flex items-center justify-center">
             <img 
               src={logoImage}
@@ -34,7 +34,7 @@ function Home() {
         </div>
 
         {/* Centered Navigation Links with Highlighted Hover Effects */}
-        <div className="hidden md:flex mx-auto space-x-8 items-center">
+        <div className="hidden md:flex mx-auto space-x-8 items-center heading-font">
           {[
             { path: "/", label: "HOME" },
             { path: "/projects", label: "PROJECTS" },
@@ -45,12 +45,12 @@ function Home() {
             <Link 
               key={link.path}
               to={link.path}
-              className={`relative px-3 py-2 text-white font-semibold transition-all 
+              className={`relative px-3 py-2 text-white font-semibold transition-all heading-font
                 ${location.pathname === link.path ? 'text-[#04E4D8] scale-110' : 'hover:text-[#04E4D8] hover:scale-105'}`}
             >
               {link.label}
               {location.pathname === link.path && (
-                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-1 bg-[#04E4D8] rounded-full"></span>
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-1 bg-[#04E4D8] heading-font rounded-full"></span>
               )}
             </Link>
           ))}
@@ -146,7 +146,7 @@ function Home() {
       {/* Image - Maintained original styling */}
       <div className="max-w-[540px] mx-auto md:mx-0 w-full">
         <img 
-          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf"
+          src={img4}
           alt="Personal Branding"
           className="w-full rounded-lg shadow-xl"
         />
@@ -177,7 +177,7 @@ function Home() {
           />
           <div className="absolute inset-0 bg-[#04E4D8]/0 group-hover:bg-[#04E4D8]/20 transition-colors duration-300"></div>
         </div>
-        <h4 className="text-2xl mb-2">Healthy Churches</h4>
+        <h4 className="text-2xl mb-2 heading-font">Healthy Churches</h4>
         
       </div>
       
@@ -190,7 +190,7 @@ function Home() {
           />
           <div className="absolute inset-0 bg-[#04E4D8]/0 group-hover:bg-[#04E4D8]/20 transition-colors duration-300"></div>
         </div>
-        <h4 className="text-2xl mb-2">OFESA Lavia  </h4>
+        <h4 className="text-2xl mb-2 heading-font">Ofesa Lavia  </h4>
      
       </div>
       
