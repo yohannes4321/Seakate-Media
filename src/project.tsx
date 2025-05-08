@@ -3,7 +3,7 @@ import { CircleIcon, PlayCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Footer } from './footer';
 import { useLocation } from 'react-router-dom';
-import logoImage from './assets/photo_1_2025-03-30_10-00-28.jpg'; // Import your logo image
+import logoImage from './assets/Seakate Media logo.png';
 import img1 from './assets/video/Screenshot (124).png';
 import img2 from './assets/video/i.jpg';
 import img4 from './assets/video/444.jpg';
@@ -110,43 +110,44 @@ function Projects() {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white font-playfair">
-       <nav className="fixed w-full z-50 bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-sm shadow-lg">
-      <div className="container mx-auto px-8 py-4 flex items-center">
-        {/* Magnified Logo with Stylish Look */}
-        <div className="h-20 w-30 rounded-full bg-white p-2 mr-6 shadow-xl border-2 border-[#04E4D8] flex-shrink-0">
-          <Link to="/" className="h-full w-full flex items-center justify-center">
-            <img 
-              src={logoImage}
-              alt="Seakate Media Logo"
-              className="h-full w-full rounded-full object-cover" // Magnified and highlighted
-            />
-          </Link>
-        </div>
+    <nav className="fixed w-full z-50 bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-sm shadow-lg">
+  <div className="container mx-auto px-8 flex items-center py-2">
+    
+    {/* Magnified Logo with Stylish Look */}
+    <div className="h-28 w-28 rounded-full mr-4 shadow-xl flex-shrink-0">
+      <Link to="/" className="h-full w-full flex items-center justify-center">
+        <img 
+          src={logoImage}
+          alt="Seakate Media Logo"
+          className="h-full w-full rounded-full object-cover"
+        />
+      </Link>
+    </div>
 
-        {/* Centered Navigation Links with Highlighted Hover Effects */}
-        <div className="hidden md:flex mx-auto space-x-8 items-center heading-font">
-          {[
-            { path: "/", label: "HOME" },
-            { path: "/projects", label: "PROJECTS" },
-            { path: "/services", label: "SERVICES" },
-            { path: "/about", label: "ABOUT" },
-            { path: "/contact", label: "CONTACT" }
-          ].map((link) => (
-            <Link 
-              key={link.path}
-              to={link.path}
-              className={`relative px-3 py-2 text-white font-semibold transition-all heading-font
-                ${location.pathname === link.path ? 'text-[#04E4D8] scale-110' : 'hover:text-[#04E4D8] hover:scale-105'}`}
-            >
-              {link.label}
-              {location.pathname === link.path && (
-                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-1 bg-[#04E4D8] heading-font rounded-full"></span>
-              )}
-            </Link>
-          ))}
-        </div>
-      </div>
-    </nav>
+    {/* Centered Navigation Links with Reduced Padding */}
+    <div className="hidden md:flex mx-auto space-x-6 items-center heading-font">
+      {[
+        { path: "/", label: "HOME" },
+        { path: "/projects", label: "PROJECTS" },
+        { path: "/services", label: "SERVICES" },
+        { path: "/about", label: "ABOUT" },
+        { path: "/contact", label: "CONTACT" }
+      ].map((link) => (
+        <Link 
+          key={link.path}
+          to={link.path}
+          className={`relative px-3 py-1 text-white font-semibold transition-all heading-font
+            ${location.pathname === link.path ? 'text-[#04E4D8] scale-110' : 'hover:text-[#04E4D8] hover:scale-105'}`}
+        >
+          {link.label}
+          {location.pathname === link.path && (
+            <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-[2px] bg-[#04E4D8] rounded-full"></span>
+          )}
+        </Link>
+      ))}
+    </div>
+  </div>
+</nav>
  <br/>
  <br/>
  <br/>
@@ -174,13 +175,13 @@ function Projects() {
                       <img
                         src={project.thumbnail}
                         alt={project.title}
-                        className="w-full h-[400px] object-cover rounded-lg group-hover:opacity-90 transition-opacity"
+                        className="w-full h-[400px] object-cover rounded-lg group-hover:opacity-90 transition-opacity font-playfair "
                       />
                       <button
                         onClick={() => setPlayingVideo(`video-${index}`)}
-                        className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 group-hover:bg-opacity-40 transition-all"
+                        className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 group-hover:bg-opacity-40 transition-all font-playfair"
                       >
-                        <PlayCircle className="w-16 h-16 text-white opacity-80 group-hover:opacity-100 transition-opacity" />
+                        <PlayCircle className="w-16 h-16 text-white opacity-80 group-hover:opacity-100 transition-opacity font-playfair" />
                       </button>
                     </>
                   )}
@@ -193,8 +194,8 @@ function Projects() {
                 />
               )}
               <div className="mt-6">
-                <h3 className="text-2xl font-light mb-2 text-teal ">{project.title}</h3>
-                <p className="text-gray-400 font-montserrat">{project.description}</p>
+                <h3 className="text-2xl font-light mb-2 text-teal font-playfair ">{project.title}</h3>
+                <p className="text-gray-400 font-montserrat font-playfair">{project.description}</p>
               </div>
             </div>
           ))}
