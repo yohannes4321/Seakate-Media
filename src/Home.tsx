@@ -73,7 +73,7 @@ function Home() {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="https://res.cloudinary.com/di5zfjqlt/video/upload/v1739519429/photo/eglo6mf2cdo0ibmp0kbp.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/di5zfjqlt/video/upload/v1746696643/final/o8lpirabvmik7kacssnf.mp4" type="video/mp4" />
             <img 
               src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab" 
               alt="Background fallback"
