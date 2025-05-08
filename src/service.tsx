@@ -63,7 +63,7 @@ function Services() {
 
         {/* Service Cards Section */}
         <section className="mt-32 max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-[#04E4D8] text-center">
+          <h2 className="text-5xl md:text-6xl mb-8 heading-font text-[#04E4D8] text-center">
             Our Photography Services
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -129,7 +129,7 @@ function Services() {
           </div>
         </section>
         <section className="mt-14 max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-[#04E4D8] text-center">
+          <h2 className="text-5xl md:text-6xl mb-8 heading-font text-[#04E4D8] text-center">
             Our Videography Services
           </h2>
           <div className="grid md:grid-cols-3 gap-8">

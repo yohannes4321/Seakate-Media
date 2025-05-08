@@ -218,41 +218,19 @@ function Home() {
       {/* Photo & Video Section */}
 <section className="py-10 bg-gray-900">
   <div className="container mx-auto px-4">
-    <div className="max-w-4xl mx-auto"> {/* Centered container with max width */}
-      <h2 className="text-5xl md:text-6xl mb-8 heading-font">
-        What Sets Us Apart:
-      </h2>
-      
-      <div className="text-xl text-gray-300 space-y-6">
-        <div className="flex items-start">
-          <span className="text-teal-400 mr-4">-</span>
-          <p className="flex-1">
-            <span className="font-semibold ">Expertise & Creativity:</span> From small-scale live streams to cinematic short films, our diverse skill set brings fresh ideas and professional execution.
-          </p>
-        </div>
+  <div className="max-w-4xl mx-auto px-4">
+  <h2 className="text-5xl md:text-6xl mb-8 heading-font text-center">
+    What Sets Us Apart:
+  </h2>
 
-        <div className="flex items-start">
-          <span className="text-teal-400 mr-4">-</span>
-          <p className="flex-1">
-            <span className="font-semibold ">Authentic Storytelling:</span> We focus on the heart of your story, ensuring your unique message resonates with viewers.
-          </p>
-        </div>
+  <p className="text-xl text-gray-300 text-justify leading-relaxed">
+    <span className="font-semibold">Expertise & Creativity:</span> From small-scale live streams to cinematic short films, our diverse skill set brings fresh ideas and professional execution. 
+    <span className="font-semibold"> Authentic Storytelling:</span> We focus on the heart of your story, ensuring your unique message resonates with viewers. 
+    <span className="font-semibold"> Proven Track Record:</span> Having served numerous organizations and individuals—from colleges to couples on their big day—we know how to deliver on-time, on-budget, and above expectations. 
+    <span className="font-semibold"> Genuine Partnership:</span> We collaborate closely with you from concept to final cut, making your vision our priority.
+  </p>
+</div>
 
-        <div className="flex items-start">
-          <span className="text-teal-400 mr-4">-</span>
-          <p className="flex-1">
-            <span className="font-semibold ">Proven Track Record:</span> Having served numerous organizations and individuals—from colleges to couples on their big day—we know how to deliver on-time, on-budget, and above expectations.
-          </p>
-        </div>
-
-        <div className="flex items-start">
-          <span className="text-teal-400 mr-4">-</span>
-          <p className="flex-1">
-            <span className="font-semibold ">Genuine Partnership:</span> We collaborate closely with you from concept to final cut, making your vision our priority.
-          </p>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 

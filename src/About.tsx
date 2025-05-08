@@ -9,11 +9,11 @@ import logoImage from './assets/Seakate Media logo.png'; // Import your logo ima
  
 const AboutPage: React.FC = () => {
   useEffect(() => {
-    document.title = 'About - KYU Media';
+    document.title = 'About - Seakate';
   }, []);
 
   return (
-    <main className="min-h-screen bg-gray-900 text-white font-playfair">
+    <main className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section */}
      
       <nav className="fixed w-full z-50 bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-sm shadow-lg">
@@ -63,17 +63,20 @@ const AboutPage: React.FC = () => {
             </div>
           </div>
           
-          <h2 className="text-5xl md:text-6xl mb-8 heading-font">
-            Who Are we
-          </h2>
-          
-          <div className="max-w-4xl">
-            <p className="text-xl text-gray-300 mb-8 text-justify">
-              We're a full-service team specialising in digital content across all platforms – Creative Strategy, Social Media, Web, Print, TV, and Live Events.We don't just follow trends; we set them. We combine agility with experience to develop creative solutions that drive results.
-            </p>
-            
-             
-          </div>
+          <div className="max-w-6xl mx-auto px-4">
+  <h2 className="text-5xl md:text-6xl mb-8 heading-font text-center">
+    Who Are We
+  </h2>
+
+<br/>
+
+  <p className="text-xl text-gray-300 mb-8 text-justify leading-relaxed">
+    We're a full-service team specialising in digital content across all platforms – Creative Strategy, Social Media, Web, Print, TV, and Live Events. We don't just follow trends; we set them. We combine agility with experience to develop creative solutions that drive results. At Seakate Media, we believe the key to a powerful brand lies in a compelling story. Forget fleeting influencers – we focus on building and amplifying enduring expert brands that resonate with their audiences. 
+  </p>
+</div>
+
+
+
         </div>
       </section>
  
@@ -118,6 +121,44 @@ const AboutPage: React.FC = () => {
           </div>
         </div>
       </section>
+      <section className="py-20">
+  <div className="container mx-auto px-4">
+    <div className="flex flex-col md:flex-row-reverse gap-12">
+      {/* Image Right */}
+      <div className="bg-[#04E4D8] p-16 rounded-sm flex items-center justify-center md:w-1/2">
+        <div className="relative">
+          <div className="brand-logos flex flex-col items-center">
+            <div className="text-black text-4xl font-bold mb-4">
+              <div className="flex items-center">
+                <span className="transform -rotate-90 text-sm mr-2 font-playfair">THE</span>
+                <span>BA</span>
+                <span className="transform rotate-90 text-sm ml-2 font-playfair">ACADEMY</span>
+              </div>
+            </div>
+            <img 
+              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg" 
+              alt="Brand Logo" 
+              className="w-32 h-auto"
+            />
+          </div>
+          <div className="flex mt-8 justify-center">
+            {[...Array(5)].map((_, i) => (
+              <div key={i} className="w-2 h-2 bg-black rounded-full mx-1" />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Text Left */}
+      <div className="flex flex-col justify-center md:w-1/2">
+        <h2 className="text-5xl md:text-6xl mb-8 heading-font">About</h2>
+        <p className="text-xl text-gray-300 mb-8 text-justify">
+          Our expertise extends beyond personal branding. We've also collaborated with established brands like MJ Bale, American Express, and Hachette to tell incredible stories. So whether it's crafting large-scale campaigns or creating engaging social content, we pride ourselves in our ability to bring the same dedication and expertise to every project.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Team Section */}
       <section className="py-5">
@@ -150,11 +191,8 @@ const AboutPage: React.FC = () => {
           </div>
 
           <div className="max-w-4xl">
-            <h3 className="text-3xl font-bold mb-8 font-playfair">About</h3>
-            <p className="text-xl text-gray-300 mb-8 text-justify">
-              At seakate Media, we believe the key to a powerful brand lies in a compelling story. Forget fleeting influencers – we focus on building And amplifying enduring expert brands that resonate with their audiences.Our team's experience speaks for itself. We've had the privilege of working with some of Australia's most respected legends, including Layne Beachley, Janine Allis, and Erin Deering, helping them tell their unique stories and build lasting legacies.
-            </p>
-           
+
+            
           </div>
         </div>
       </section>
