@@ -74,11 +74,7 @@ function Home() {
             className="w-full h-full object-cover"
           >
             <source src="https://res.cloudinary.com/di5zfjqlt/video/upload/v1746696643/final/o8lpirabvmik7kacssnf.mp4" type="video/mp4" />
-            <img 
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab" 
-              alt="Background fallback"
-              className="w-full h-full object-cover"
-            />
+             
           </video>
           <div className="absolute inset-0 bg-gray-900/50"></div>
         </div>
