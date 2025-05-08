@@ -63,18 +63,16 @@ const AboutPage: React.FC = () => {
             </div>
           </div>
           
-          <h2 className="text-2xl md:text-6xl font-bold mb-10 font-playfair">
+          <h2 className="text-5xl md:text-6xl mb-8 heading-font">
             Who Are we
           </h2>
           
           <div className="max-w-4xl">
-            <p className="text-2xl md:text-3xl mb-8 leading-relaxed font-playfair">
-              We're a full-service team specialising in digital content across all platforms – Creative Strategy, Social Media, Web, Print, TV, and Live Events.
+            <p className="text-xl text-gray-300 mb-8 text-justify">
+              We're a full-service team specialising in digital content across all platforms – Creative Strategy, Social Media, Web, Print, TV, and Live Events.We don't just follow trends; we set them. We combine agility with experience to develop creative solutions that drive results.
             </p>
             
-            <p className="text-2xl md:text-3xl leading-relaxed font-playfair">
-              We don't just follow trends; we set them. We combine agility with experience to develop creative solutions that drive results.
-            </p>
+             
           </div>
         </div>
       </section>
@@ -111,13 +109,11 @@ const AboutPage: React.FC = () => {
             </div>
             
             <div className="flex flex-col justify-center">
-              <h2 className="text-5xl md:text-6xl font-bold mb-8">Brands</h2>
-              <p className="text-xl mb-6 font-playfair">
-                Our expertise extends beyond personal branding. We've also collaborated with established brands like MJ Bale, American Express, and Hachette to tell incredible stories.
+              <h2 className="text-5xl md:text-6xl mb-8 heading-font">Brands</h2>
+              <p className="text-xl text-gray-300 mb-8 text-justify">
+                Our expertise extends beyond personal branding. We've also collaborated with established brands like MJ Bale, American Express, and Hachette to tell incredible stories. So whether it's crafting large-scale campaigns or creating engaging social content, we pride ourselves in our ability to bring the same dedication and expertise to every project.
               </p>
-              <p className="text-xl  font-playfair">
-                So whether it's crafting large-scale campaigns or creating engaging social content, we pride ourselves in our ability to bring the same dedication and expertise to every project.
-              </p>
+              
             </div>
           </div>
         </div>
@@ -126,7 +122,7 @@ const AboutPage: React.FC = () => {
       {/* Team Section */}
       <section className="py-5">
         <div className="container mx-auto px-4">
-          <h2 className="text-6xl md:text-7xl font-bold mb-16 font-playfair">Get To Know Us</h2>
+          <h2 className="text-5xl md:text-6xl mb-8 heading-font">Get To Know Us</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
             {[
@@ -155,11 +151,8 @@ const AboutPage: React.FC = () => {
 
           <div className="max-w-4xl">
             <h3 className="text-3xl font-bold mb-8 font-playfair">About</h3>
-            <p className="text-xl mb-8  font-playfair">
-              At seakate Media, we believe the key to a powerful brand lies in a compelling story. Forget fleeting influencers – we focus on building And amplifying enduring expert brands that resonate with their audiences.
-            </p>
-            <p className="text-xl mb-8 font-playfair">
-              Our team's experience speaks for itself. We've had the privilege of working with some of Australia's most respected legends, including Layne Beachley, Janine Allis, and Erin Deering, helping them tell their unique stories and build lasting legacies.
+            <p className="text-xl text-gray-300 mb-8 text-justify">
+              At seakate Media, we believe the key to a powerful brand lies in a compelling story. Forget fleeting influencers – we focus on building And amplifying enduring expert brands that resonate with their audiences.Our team's experience speaks for itself. We've had the privilege of working with some of Australia's most respected legends, including Layne Beachley, Janine Allis, and Erin Deering, helping them tell their unique stories and build lasting legacies.
             </p>
            
           </div>
