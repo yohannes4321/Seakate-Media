@@ -8,12 +8,7 @@ import img1 from './assets/video/Screenshot (124).png';
 import img2 from './assets/video/i.jpg';
 import img4 from './assets/video/444.jpg';
 import  img3  from './assets/video/333.jpg';
-import video1 from './assets/video/Bethany Ward Testimony.mp4';
-import video2 from './assets/video/Joakim Pärlesköld _ Student Stories _ Hillsong College.mp4';
-import video3 from './assets/video/Michael Wortley _ Student Testimony.mp4';
-import video4 from './assets/video/Hills Campus Tour _ Sydney, Australia.mp4';
-import video5 from './assets/video/Jonathan Klassen Testimony.mp4'
-import video6 from './assets/video/kl93gt3qqzriit1hnnq8.mp4';
+
 import img11 from './assets/video/Screenshot (124).png'
 function Projects() {
   const location = useLocation();
@@ -29,21 +24,21 @@ function Projects() {
     },
     {
       type: 'video',
-      src: video4,
+      src: "https://player.cloudinary.com/embed/?cloud_name=di5zfjqlt&public_id=final%2Frbzoohknekzp0gmnfmtq&profile=cld-default",
       thumbnail: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743482124/final/ucj3fbdsghyzcfcj93qn.jpg',
       title: 'Hills Campus Tour | Sydney, Australia',
       description: 'A captivating tour of Hillsong College\'s Sydney campus.',
     },
     {
       type: 'video',
-      src: video2,
+      src: "https://player.cloudinary.com/embed/?cloud_name=di5zfjqlt&public_id=final%2Frbzoohknekzp0gmnfmtq&profile=cld-default",
       thumbnail: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743480131/final/b91djim3mi1zjdaycvkl.jpg',
       title: 'Flor And Matthiew',
       description: 'A student story that highlights the journey and experiences of Flor and Matthiew at Hillsong College.',
     },
     {
       type: 'video',
-      src: video1,
+      src: "https://player.cloudinary.com/embed/?cloud_name=di5zfjqlt&public_id=final%2Frbzoohknekzp0gmnfmtq&profile=cld-default",
  
       title: 'Bethany Ward Testimony',
       description: 'A student story that highlights the journey and experiences of Bethany Ward at Hillsong College.',
@@ -51,7 +46,7 @@ function Projects() {
     },
     {
       type: 'video',
-      src: video3,
+      src: "https://player.cloudinary.com/embed/?cloud_name=di5zfjqlt&public_id=final%2Frbzoohknekzp0gmnfmtq&profile=cld-default",
       thumbnail: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743480220/final/izvqeyr241hvquh5fftb.jpg',  
       title: 'Event Coverage',
       description: 'Professional event coverage and storytelling.',
@@ -66,7 +61,7 @@ function Projects() {
       type: 'video',
       thumbnail:  img11,
       title: 'Joakim Pärlesköld | Student Stories | Hillsong College',
-      src: video6,
+      src: "https://player.cloudinary.com/embed/?cloud_name=di5zfjqlt&public_id=final%2Frbzoohknekzp0gmnfmtq&profile=cld-default",
       description: 'Engaging social media content that drives engagement.',
     },
     {
