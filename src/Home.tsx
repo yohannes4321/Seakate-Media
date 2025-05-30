@@ -2,7 +2,7 @@ import React from 'react';
 import { Menu } from 'lucide-react';
 
 import services from './service';
-import Projects from './project';
+import projects from './project';
 import contact from './contact';
 import About from './About';
 import { Footer } from './footer';
@@ -38,7 +38,7 @@ function Home() {
     <div className="hidden md:flex mx-auto space-x-6 items-center heading-font">
       {[
         { path: "/", label: "HOME" },
-        { path: "/Projects", label: "PROJECTS" },
+        { path: "/projects", label: "PROJECTS" },
         { path: "/services", label: "SERVICES" },
         { path: "/about", label: "ABOUT" },
         { path: "/contact", label: "CONTACT" }
