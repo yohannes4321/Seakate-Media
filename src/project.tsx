@@ -17,7 +17,7 @@ function Projects() {
   const projects = [
     {
       type: 'video',
-      src: video5,
+      src: "https://player.cloudinary.com/embed/?cloud_name=di5zfjqlt&public_id=final%2Frbzoohknekzp0gmnfmtq&profile=cld-default",
       thumbnail: 'https://res.cloudinary.com/di5zfjqlt/image/upload/v1743482042/final/jybngdkvtbms0qh7xpts.jpg',
       title: 'Jonathan Klassen Testimony ',
       description: 'Hillsong College Testimony',
