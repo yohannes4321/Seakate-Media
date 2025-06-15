@@ -157,29 +157,29 @@ function Projects() {
               {project.type === 'video' ? (
                 <div className="relative">
                   {playingVideo === `video-${index}` ? (
-                    <video
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-[400px] object-cover rounded-lg"
-                      src={project.src}
-                    />
-                  ) : (
-                    <>
-                      <img
-                        src={project.thumbnail}
-                        alt={project.title}
-                        className="w-full h-[400px] object-cover rounded-lg group-hover:opacity-90 transition-opacity font-playfair "
-                      />
-                      <button
-                        onClick={() => setPlayingVideo(`video-${index}`)}
-                        className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 group-hover:bg-opacity-40 transition-all font-playfair"
-                      >
-                        <PlayCircle className="w-16 h-16 text-white opacity-80 group-hover:opacity-100 transition-opacity font-playfair" />
-                      </button>
-                    </>
-                  )}
+  <iframe
+    src={project.src + '&autoplay=true'}
+    allow="autoplay; fullscreen"
+    allowFullScreen
+    frameBorder="0"
+    className="w-full h-[400px] rounded-lg"
+  />
+) : (
+  <>
+    <img
+      src={project.thumbnail}
+      alt={project.title}
+      className="w-full h-[400px] object-cover rounded-lg group-hover:opacity-90 transition-opacity"
+    />
+    <button
+      onClick={() => setPlayingVideo(`video-${index}`)}
+      className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 group-hover:bg-opacity-40 transition-all"
+    >
+      <PlayCircle className="w-16 h-16 text-white opacity-80 group-hover:opacity-100 transition-opacity" />
+    </button>
+  </>
+)}
+
                 </div>
               ) : (
                 <img
