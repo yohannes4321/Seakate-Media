@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import { Footer } from './footer';
 import { Link } from 'react-router-dom';
- 
+import Navbar from "./nav";
 import { useLocation } from 'react-router-dom';
 import logoImage from './assets/Seakate Media logo.png'; // Import your logo image
  
@@ -54,44 +54,7 @@ function Contact() {
   return (
     <div className="bg-gray-900">
 
-<nav className="fixed w-full z-50 bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-sm shadow-lg">
-  <div className="container mx-auto px-8 flex items-center py-2">
-    
-    {/* Magnified Logo with Stylish Look */}
-    <div className="h-28 w-28 rounded-full mr-4 shadow-xl flex-shrink-0">
-      <Link to="/" className="h-full w-full flex items-center justify-center">
-        <img 
-          src={logoImage}
-          alt="Seakate Media Logo"
-          className="h-full w-full rounded-full object-cover"
-        />
-      </Link>
-    </div>
-
-    {/* Centered Navigation Links with Reduced Padding */}
-    <div className="hidden md:flex mx-auto space-x-6 items-center heading-font">
-      {[
-        { path: "/", label: "HOME" },
-        { path: "/projects", label: "PROJECTS" },
-        { path: "/services", label: "SERVICES" },
-        { path: "/about", label: "ABOUT" },
-        { path: "/contact", label: "CONTACT" }
-      ].map((link) => (
-        <Link 
-          key={link.path}
-          to={link.path}
-          className={`relative px-3 py-1 text-white font-semibold transition-all heading-font
-            ${location.pathname === link.path ? 'text-[#04E4D8] scale-110' : 'hover:text-[#04E4D8] hover:scale-105'}`}
-        >
-          {link.label}
-          {location.pathname === link.path && (
-            <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-[2px] bg-[#04E4D8] rounded-full"></span>
-          )}
-        </Link>
-      ))}
-    </div>
-  </div>
-</nav>
+<Navbar />
     <br/>
     <br/>
     <br/>

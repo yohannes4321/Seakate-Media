@@ -8,50 +8,14 @@ import img2 from './assets/1st/cg5fcukvbegabsx9ypgl (1).jpg';
 import img3 from './assets/1st/jrzmqrsmc4rhr7kom8aw.jpg';
 import k from './assets/video/TW-LiveStreamingOverview.jpg'
 import img4 from './assets/video/download.jpg'
+import Navbar from "./nav";
 function Services() {
   const location = useLocation();
   
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Navigation */}
-      <nav className="fixed w-full z-50 bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-sm shadow-lg">
-  <div className="container mx-auto px-8 flex items-center py-2">
-    
-    {/* Magnified Logo with Stylish Look */}
-    <div className="h-28 w-28 rounded-full mr-4 shadow-xl flex-shrink-0">
-      <Link to="/" className="h-full w-full flex items-center justify-center">
-        <img 
-          src={logoImage}
-          alt="Seakate Media Logo"
-          className="h-full w-full rounded-full object-cover"
-        />
-      </Link>
-    </div>
-
-    {/* Centered Navigation Links with Reduced Padding */}
-    <div className="hidden md:flex mx-auto space-x-6 items-center heading-font">
-      {[
-        { path: "/", label: "HOME" },
-        { path: "/projects", label: "PROJECTS" },
-        { path: "/services", label: "SERVICES" },
-        { path: "/about", label: "ABOUT" },
-        { path: "/contact", label: "CONTACT" }
-      ].map((link) => (
-        <Link 
-          key={link.path}
-          to={link.path}
-          className={`relative px-3 py-1 text-white font-semibold transition-all heading-font
-            ${location.pathname === link.path ? 'text-[#04E4D8] scale-110' : 'hover:text-[#04E4D8] hover:scale-105'}`}
-        >
-          {link.label}
-          {location.pathname === link.path && (
-            <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 h-[2px] bg-[#04E4D8] rounded-full"></span>
-          )}
-        </Link>
-      ))}
-    </div>
-  </div>
-</nav>
+<Navbar />
 
       {/* Main Content */}
       <div className="pt-3 px-8 md:px-16">
