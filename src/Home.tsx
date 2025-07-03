@@ -6,6 +6,7 @@ import projects from './project';
 import contact from './contact';
 import About from './About';
 import { Footer } from './footer';
+import {Navbar} from './navigation.tsx';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import logoImage from './assets/1st/seakate media logo 2.jpg';
@@ -19,8 +20,8 @@ function Home() {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-
-<nav className="fixed w-full z-50 bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-sm shadow-lg">
+<Navbar />
+{/* <nav className="fixed w-full z-50 bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-sm shadow-lg">
   <div className="container mx-auto px-8 flex items-center py-2">
     
     {/* Magnified Logo with Stylish Look */}
@@ -57,7 +58,7 @@ function Home() {
       ))}
     </div>
   </div>
-</nav>
+</nav> */}
 
       {/* Navigation */}
 
